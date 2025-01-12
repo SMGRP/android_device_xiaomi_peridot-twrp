@@ -9,6 +9,9 @@ DEVICE_PATH := device/xiaomi/peridot
 # Inherit from device.mk configuration
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
+# Inherit any OrangeFox-specific settings
+$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_ingres.mk)
+
 # Release name
 PRODUCT_RELEASE_NAME := peridot
 
