@@ -68,7 +68,8 @@ AB_OTA_PARTITIONS += \
     system_ext \
     system_dlkm \
     vendor \
-    vendor_dlkm
+    vendor_dlkm \
+    super
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
