@@ -23,8 +23,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 PRODUCT_PACKAGES += \
+    update_engine \
+    update_engine_client \
+    update_verifier \
     bootctrl.xiaomi_sm8550.recovery \
     android.hardware.boot@1.2-impl-qti.recovery
+
+PRODUCT_PACKAGES += \
+  update_engine_sideload
+
+# f2fs utilities
+PRODUCT_PACKAGES += \
+    sg_write_buffer \
+    f2fs_io \
+    check_f2fs
 
 # SHIPPING API
 PRODUCT_SHIPPING_API_LEVEL := 31
