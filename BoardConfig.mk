@@ -54,22 +54,6 @@ BOARD_RAMDISK_USE_LZ4 := true
 BOARD_EXCLUDE_KERNEL_FROM_RECOVERY_IMAGE := true
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    boot \
-    init_boot \
-    vendor_boot \
-    dtbo \
-    vbmeta \
-    vbmeta_system \
-    odm \
-    product \
-    system \
-    system_ext \
-    system_dlkm \
-    vendor \
-    vendor_dlkm
-
 # Verified Boot
 BOARD_AVB_ENABLE := true
 
